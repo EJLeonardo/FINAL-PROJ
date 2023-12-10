@@ -14,13 +14,13 @@ $conn = new mysqli('localhost', 'root', '', 'register_stud_db');
 if ($conn->connect_error) {
     die('Connection Failed : ' . $conn->connect_error);
 } else {
-    $stmt = $conn->prepare("INSERT INTO student (stud_id, l_name, f_name, m_i, program, year_l, email, phone_num) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO student (stud_id, l_name, f_name, m_i, program, year_l, email, phone_num) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     
     if (!$stmt) {
         die('Error in preparing statement: ' . $conn->error);
     }
 
-    $stmt->bind_param("issssss", $stud_id, $l_name, $f_name, $m_i, $program, $year, $email, $phone_num);
+    $stmt->bind_param("issssss", $stud_id, $l_name, $f_name, $m_i, $program, $year_l, $email, $phone_num);
 
     if (!$stmt->execute()) {
         die('Error in executing statement: ' . $stmt->error);
@@ -33,3 +33,4 @@ if ($conn->connect_error) {
 }
 
 ?>
+
