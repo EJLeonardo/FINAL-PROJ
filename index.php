@@ -5,6 +5,6 @@
         $uri = 'http://';
     }
     $uri .= $_SERVER['HTTP_HOST'];
-    header('Location: index.html');
+    header('Location: addstudent.html');
     exit;
 ?>
