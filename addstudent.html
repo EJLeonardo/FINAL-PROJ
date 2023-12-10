@@ -12,129 +12,86 @@ body {
   background-size: cover;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
+.test2{
+  border-style: solid;
+  border-width: 5px;
+  border-color: #545454;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: fit-content;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 950px;
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
+label{
+  font-size: 20px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: red;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.icon {
-  color: white;
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #EEF5FF;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
+  color: black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 
-.fa-user:hover {
-  color: blue;
+select{
+  margin-bottom: 10px;
 }
-.form-container {
-            width: 45%;
-            background: #fff;
-            padding: 20px;
-            box-sizing: border-box;
-            margin-left: 800px; /* Adjust the margin between the forms */
-        }
 
-        .registration-form {
-            width: 40%;
-        }
+button{
+  margin-left: 170px;
+  width:100px;
+  height: 50px;
+}
 
-        .registration-form input {
-            width: calc(50% - 20px);
-            padding: 10px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
 
-        .registration-form button {
-            width: 30%;
-            height: 10px;
-            padding: 50px;
-            background: #333;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
 </style>
 </head>
 <body>
+  <div class="test2">
+    <form action="action_page.php">
+      <center><h1>ADD STUDENT</h1></center>
+        <hr>
+        <center><input type="text" placeholder="Last Name" name="last_name" id="last_name" required></center>
+        <br>
+        <right><input type="text" placeholder="First Name" name="first_name" id="first_name" required></right>
+        <input style="margin-left: 50px;" type="text" placeholder="M.I." size="10" name="middle_initial" id="middle_initial">
+        <br>
+        <center><input type="text" placeholder="Student Number" name="student_no" id="student_no" required></center>
+        <br>
+        <label for="prog"><b>Program</b></label>
+        <select>
+          <option value=""></option>
+          <option value="cpe">CPE</option>
+          <option value="ee">EE</option>
+          <option value="it">IT</option>
+          <option value="cs">CS</option>
+        </select>
 
-<h2>Fade in Overlay Icon</h2>
-<p>Hover over the image to see the effect.</p>
+        <label for="cars"><b>Curr. Yr</b></label>
+        <select>
+          <option value=""></option>
+          <option value="1st">1st Year</option>
+          <option value="2nd">2nd</option> Year</option>
+          <option value="3rd">3rd Year</option>
+          <option value="4th">4th Year</option>
+        </select>
+        <br>
+        <label for="E-mail"><b>UE E-mail address</b></label><br>
+        <input type="text" placeholder="" name="E-mail" id="E-mail" required>
+        <br>
+        <label for="number"><b>Contact Number<br>+63</b></label>
+        <input type="tel" placeholder="" name="number" id="number" required>
+        <hr>
 
-<div class="form-container registration-form">
-  <form action="#" method="post">
-    <label for="last_name"><b>Last Name :</b></label>
-    <input type="text" placeholder="" name="last_name" id="last_name" required>
-    <br>
-    <label for="first_name"><b>First Name:</b></label>
-    <input type="text" placeholder="" name="first_name" id="first_name" required>
-
-    <label for="middle_initial"><b>MI</b></label>
-    <input type="text" placeholder="" size="10" name="middle_initial" id="middle_initial">
-    <br>
-    <label for="student_no"><b>Student Number:</b></label>
-    <input type="text" placeholder="" name="student_no" id="student_no" required>
-    <br>
-    <label for="cars">Program</label>
-    <select>
-      <option value="" name="program"></option>
-    <option value="cpe">CPE</option>
-    <option value="ee">EE</option>
-    <option value="it">IT</option>
-    <option value="cs">CS</option>
-  </select>
-
-  <label for="cars">Curr. Yr</label>
-  <select>
-    <option value="" name="year"></option>
-  <option value="1st">1st Year</option>
-  <option value="2nd">2nd</option> Year</option>
-  <option value="3rd">3rd Year</option>
-  <option value="4th">4th Year</option>
-</select>
-
-<br>
-<label for="E-mail"><b>UE E-mail address</b></label><br>
-<input type="text" placeholder="" name="E-mail" id="E-mail" required>
-<br>
-<label for="number"><b>Contact Number<br>+63</b></label>
-<input type="text" placeholder="" name="number" id="number" required>
-    <hr>
-    <br>
-
-
-      <button type="submit">Register</button>
-  </form>
-</div>
-
+        <button type="submit" class="registerbtn"><b>Register</b></button>
+    </form>
+  </div>
 </body>
 </html>

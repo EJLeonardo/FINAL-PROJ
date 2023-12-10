@@ -12,53 +12,9 @@ body {
   background-size: cover;
 }
 
-.container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: red;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.icon {
-  color: white;
-  font-size: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.fa-user:hover {
-  color: blue;
-}
-
 .test2{
   border-style: solid;
-  border-width: 6px;
+  border-width: 5px;
   border-color: #545454;
   border-radius: 10px;
   padding: 30px;
@@ -67,60 +23,56 @@ body {
   margin-top: 100px;
   margin-left: 50px;
 }
+
+
+
 </style>
 </head>
 <body>
-
   <div class="test2">
-  <form action="register_stud.php" method="post">
-    <div class="container">
-      <h1>Add Student</h1>
-      <hr>
-  
-      <label for="last_name"><b>Last Name :</b></label>
-      <input type="text" placeholder="" name="last_name" id="last_name" required>
-      <br>
-      <label for="first_name"><b>First Name:</b></label>
-      <input type="text" placeholder="" name="first_name" id="first_name" required>
+    <form action="action_page.php">
+        <h1>ADD STUDENT</h1>
+        <hr>
 
-      <label for="middle_initial"><b>MI</b></label>
-      <input type="text" placeholder="" size="10" name="middle_initial" id="middle_initial">
-      <br>
-      <label for="student_no"><b>Student Number:</b></label>
-      <input type="text" placeholder="" name="student_no" id="student_no" required>
-      <br>
-      <label for="cars">Program</label>
-      <select>
-        <option value="" name="program"></option>
-      <option value="cpe">CPE</option>
-      <option value="ee">EE</option>
-      <option value="it">IT</option>
-      <option value="cs">CS</option>
-    </select>
+        <label for="last_name"><b>Last Name :</b></label>
+        <input type="text" placeholder="" name="last_name" id="last_name" required>
+        <br>
+        <label for="first_name"><b>First Name:</b></label>
+        <input type="text" placeholder="" name="first_name" id="first_name" required>
 
-    <label for="cars">Curr. Yr</label>
-    <select>
-      <option value="" name="year"></option>
-    <option value="1st">1st Year</option>
-    <option value="2nd">2nd</option> Year</option>
-    <option value="3rd">3rd Year</option>
-    <option value="4th">4th Year</option>
-  </select>
+        <label for="middle_initial"><b>MI</b></label>
+        <input type="text" placeholder="" size="10" name="middle_initial" id="middle_initial">
+        <br>
+        <label for="student_no"><b>Student Number:</b></label>
+        <input type="text" placeholder="" name="student_no" id="student_no" required>
+        <br>
+        <label for="prog">Program</label>
+        <select>
+          <option value=""></option>
+          <option value="cpe">CPE</option>
+          <option value="ee">EE</option>
+          <option value="it">IT</option>
+          <option value="cs">CS</option>
+        </select>
 
-  <br>
-  <label for="E-mail"><b>UE E-mail address</b></label><br>
-  <input type="text" placeholder="" name="E-mail" id="E-mail" required>
-  <br>
-  <label for="number"><b>Contact Number<br>+63</b></label>
-  <input type="text" placeholder="" name="number" id="number" required>
-      <hr>
-      <br>
-    </div>
-  
-  <button type="submit" class="registerbtn">Register</button>
+        <label for="cars">Curr. Yr</label>
+        <select>
+          <option value=""></option>
+          <option value="1st">1st Year</option>
+          <option value="2nd">2nd</option> Year</option>
+          <option value="3rd">3rd Year</option>
+          <option value="4th">4th Year</option>
+        </select>
+        <br>
+        <label for="E-mail"><b>UE E-mail address</b></label><br>
+        <input type="text" placeholder="" name="E-mail" id="E-mail" required>
+        <br>
+        <label for="number"><b>Contact Number<br>+63</b></label>
+        <input type="tel" placeholder="" name="number" id="number" required>
+        <hr>
+
+        <button type="submit" class="registerbtn">Register</button>
+    </form>
   </div>
-
-
-</form>
 </body>
 </html>
