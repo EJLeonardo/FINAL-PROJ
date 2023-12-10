@@ -21,58 +21,54 @@ body {
   max-width: fit-content;
   background-color: white;
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
+label{
+  font-size: 20px;
+}
 
+input{
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #EEF5FF;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+select{
+  margin-bottom: 10px;
+}
+
+button{
+  margin-left: 150px;
+  width:100px;
+  height: 50px;
+}
 
 </style>
 </head>
 <body>
+
   <div class="test2">
     <form action="action_page.php">
-        <h1>ADD STUDENT</h1>
+      <center><h1>REGISTER STUDENT NOW</h1></center>
         <hr>
-
-        <label for="last_name"><b>Last Name :</b></label>
-        <input type="text" placeholder="" name="last_name" id="last_name" required>
-        <br>
-        <label for="first_name"><b>First Name:</b></label>
-        <input type="text" placeholder="" name="first_name" id="first_name" required>
-
-        <label for="middle_initial"><b>MI</b></label>
-        <input type="text" placeholder="" size="10" name="middle_initial" id="middle_initial">
-        <br>
-        <label for="student_no"><b>Student Number:</b></label>
-        <input type="text" placeholder="" name="student_no" id="student_no" required>
-        <br>
-        <label for="prog">Program</label>
-        <select>
-          <option value=""></option>
-          <option value="cpe">CPE</option>
-          <option value="ee">EE</option>
-          <option value="it">IT</option>
-          <option value="cs">CS</option>
-        </select>
-
-        <label for="cars">Curr. Yr</label>
-        <select>
-          <option value=""></option>
-          <option value="1st">1st Year</option>
-          <option value="2nd">2nd</option> Year</option>
-          <option value="3rd">3rd Year</option>
-          <option value="4th">4th Year</option>
-        </select>
-        <br>
-        <label for="E-mail"><b>UE E-mail address</b></label><br>
-        <input type="text" placeholder="" name="E-mail" id="E-mail" required>
-        <br>
-        <label for="number"><b>Contact Number<br>+63</b></label>
-        <input type="tel" placeholder="" name="number" id="number" required>
+        <center><label for="prog"><b>Choose Event to Manage</b></label></center>
+        <br><br>
+        <center><input type="text" placeholder="Student Number" name="student_no" id="student_no" required></center>
         <hr>
-
-        <button type="submit" class="registerbtn">Register</button>
+        <button type="submit" class="registerbtn"><b>Register</b></button>
+        <br><br>
+        <button type="submit" class="registerbtn"><b>View All Attendees</b></button>
+        <br><br>
+        <button type="submit" class="registerbtn"><b>Logout Now</b></button>
     </form>
   </div>
+
 </body>
 </html>
