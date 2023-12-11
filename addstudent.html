@@ -56,7 +56,7 @@ button{
 </head>
 <body>
   <div class="test2">
-    <form action="action_page.php">
+    <form action="add_stud.php">
       <center><p>ADD STUDENT</p></center>
         <hr>
         <center><input type="text" placeholder="Last Name" name="last_name" id="last_name" required></center> 
@@ -67,7 +67,7 @@ button{
         
 
         <label for="prog"><b>Program</b></label>
-        <select>
+        <select name="program">
           <option value=""></option>
           <option value="cpe">CPE</option>
           <option value="ee">EE</option>
@@ -75,7 +75,7 @@ button{
           <option value="cs">CS</option>
         </select>
         <label for="cars"><b>Curr. Yr</b></label>
-        <select>
+        <select name="year_l">
           <option value=""></option>
           <option value="1st">1st Year</option>
           <option value="2nd">2nd</option> Year</option>

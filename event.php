@@ -21,13 +21,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $event_end_time = $conn->real_escape_string($_POST["event_end_time"]);
     $registration_fee = $conn->real_escape_string($_POST["registration_fee"]);
     $program = $conn->real_escape_string($_POST["program"]);
-    $curr_year = $conn->real_escape_string($_POST["curr_year"]);
+
 
     // Insert data using a prepared statement
-    $sql = "INSERT INTO events (event_name, event_description, event_date, event_start_time, event_end_time, registration_fee, program, curr_year) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+    $sql = "INSERT INTO events (event_name, event_description, event_date, event_start_time, event_end_time, registration_fee, program) VALUES (?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program, $curr_year);
+    $stmt->bind_param("ssssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program, );
 
     if ($stmt->execute()) {
         header("Location: addevent.html");
