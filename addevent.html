@@ -13,10 +13,13 @@ body {
 }
 
 .test2{
-  border:none;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #545454;
   border-radius: 10px;
   padding: 30px;
   max-width: fit-content;
+  background-color: white;
   margin-top: 100px;
   margin-left: 100px;
 }
@@ -52,52 +55,48 @@ button{
 <body>
 
   <div class="test2">
-    <form action="action_page.php">
+    <form action="event.php" method="post">
       <center><h1>ADD EVENT</h1></center>
-        <hr>
-        <center><input type="text" placeholder="Event Name" name="event_name" id="event_name" required></center>
-        <br>
-        <center><input type="text" placeholder="Event Description" name="event_description" id="event_description" required></center>
-        <br>
-        <form action="/action_page.php">
-          <label for="event_date">Event Date: </label>
-          <input type="date" id="event_date" name="event_date">
-        </form>
+      <hr>
+      <center><input type="text" placeholder="Event Name" name="event_name" id="event_name" required></center>
+      <br>
+      <center><input type="text" placeholder="Event Description" name="event_description" id="event_description" required></center>
+      <br>
+      <label for="event_date">Event Date: </label>
+      <input type="date" id="event_date" name="event_date">
+      <br>
+      <label for="event_start_time">Event Start Time:</label>
+      <input type="time" id="event_start_time" name="event_start_time">
+      <br>
+      <label for="event_end_time">Event End Time:</label>
+      <input type="time" id="event_end_time" name="event_end_time">
+      <br>
+      <center><input type="text" placeholder="Registration Fee" name="registration_fee" id="registration_fee" required></center>
+      <br>
 
-        <form action="/action_page.php">
-          <label for="event_start_time">Event Start Time:</label>
-          <input type="time" id="event_start_time" name="appt">
-        </form>
-
-        <form action="/action_page.php">
-          <label for="event_end_time">Event End Time:</label>
-          <input type="time" id="event_end_time" name="appt">
-        </form>
-
-        <center><input type="text" placeholder="Registration Fee" name="registration_fee" id="registration_fee" required></center>
-        <br>
-
-        <label for="prog"><b>Program</b></label>
-        <select>
+      <label for="prog"><b>Program</b></label>
+      <select name="program">
           <option value=""></option>
           <option value="cpe">CPE</option>
           <option value="ee">EE</option>
           <option value="it">IT</option>
           <option value="cs">CS</option>
-        </select>
-        <label for="cars"><b>Curr. Yr</b></label>
-        <select>
+      </select>
+      <label for="cars"><b>Curr. Yr</b></label>
+      <select name="curr_year">
           <option value=""></option>
           <option value="1st">1st Year</option>
-          <option value="2nd">2nd</option> Year</option>
+          <option value="2nd">2nd Year</option>
           <option value="3rd">3rd Year</option>
           <option value="4th">4th Year</option>
-        </select>
-        <br>
-        <hr>
-        <button type="submit" class="registerbtn"><b>Save</b></button>
-    </form>
-  </div>
+      </select>
+      <br>
+      <hr>
+      <button type="submit" class="registerbtn"><b>Save</b></button>
+  </form>
+</div>
 
+<!-- You might want to add form elements here if needed -->
 </body>
 </html>
+
