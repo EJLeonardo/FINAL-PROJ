@@ -60,14 +60,11 @@ p {
     <form action="action_page.php">
       <center><p>MANAGE EVENT</p></center>
         <hr>
-        <center><label for="prog"><b>Choose Event to Manage</b></label></center>
-        <select style="padding-right: 200px; padding-top: 20px; margin-left: 70px; margin-top: 20px;">
-          <option value=""></option>
-          <option value="cpe">CPE</option>
-          <option value="ee">EE</option>
-          <option value="it">IT</option>
-          <option value="cs">CS</option>
-        </select>
+        <form action="process_selection.php" method="post">
+          <label for="eventSelect">Choose an event:</label>
+          <select name="event_id" id="eventSelect" required>
+            <?php include('get_events.php'); ?>
+          </select>
         <hr>
         <button type="submit" class="registerbtn"><b>Manage</b></button>
     </form>

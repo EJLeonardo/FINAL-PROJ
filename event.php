@@ -22,16 +22,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $registration_fee = $conn->real_escape_string($_POST["registration_fee"]);
     $program = $conn->real_escape_string($_POST["program"]);
 
-
     // Insert data using a prepared statement
     $sql = "INSERT INTO events (event_name, event_description, event_date, event_start_time, event_end_time, registration_fee, program) VALUES (?, ?, ?, ?, ?, ?, ?)";
     
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("ssssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program, );
+    $stmt->bind_param("sssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program);
 
     if ($stmt->execute()) {
+        echo "Event added successfully!";
         header("Location: addstudent.html");
-        exit(); // Ensure that no further code is executed after the redirection
+        exit();
     } else {
         echo "Error: " . $stmt->error;
     }
@@ -39,6 +39,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Close the statement and connection
     $stmt->close();
     $conn->close();
-    //njnfg
 }
 ?>
