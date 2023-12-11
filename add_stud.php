@@ -25,7 +25,8 @@
             if (!$stmt->execute()) {
                 die('Error in executing statement: ' . $stmt->error);
             }
-
+            header("Location: addstudent.html");
+            exit();
             echo "Registration Successful...8=D";
 
             $stmt->close();
