@@ -63,7 +63,8 @@ p {
         <form action="process_selection.php" method="post">
           <label for="eventSelect">Choose an event:</label>
           <select name="event_id" id="eventSelect" required>
-            <?php include('get_events.php'); ?>
+            <?php 
+            include('get_events.php'); ?>          
           </select>
         <hr>
         <button type="submit" class="registerbtn"><b>Manage</b></button>
