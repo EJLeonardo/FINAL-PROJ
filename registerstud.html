@@ -12,16 +12,20 @@ body {
   background-size: cover;
 }
 
+p {
+  font-size: 50px;
+  margin-bottom:100px;
+}
+
 .test2{
-  border-style: solid;
-  border-width: 5px;
-  border-color: #545454;
+  border:none;
   border-radius: 10px;
   padding: 30px;
   max-width: fit-content;
-  background-color: white;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 15px;
+  margin-left: 25px;
+  color: white ;
+  margin-top: 80px;
 }
 
 label{
@@ -31,7 +35,7 @@ label{
 input{
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #EEF5FF;
+  background-color: #ECF9FF;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color: black;
@@ -45,7 +49,7 @@ select{
 }
 
 button{
-  margin-left: 150px;
+  margin-left: 70px;
   width:100px;
   height: 50px;
 }
@@ -56,17 +60,18 @@ button{
 
   <div class="test2">
     <form action="action_page.php">
-      <center><h1>REGISTER STUDENT NOW</h1></center>
+      <center><p>REGISTER STUDENT NOW</p></center>
         <hr>
-        <center><label for="prog"><b>Choose Event to Manage</b></label></center>
-        <br><br>
+        <center><label for="prog"><b>tanginamo</b></label></center>
+        <br>
         <center><input type="text" placeholder="Student Number" name="student_no" id="student_no" required></center>
         <hr>
+        <br>
+        <div class="buttons">
         <button type="submit" class="registerbtn"><b>Register</b></button>
-        <br><br>
-        <button type="submit" class="registerbtn"><b>View All Attendees</b></button>
-        <br><br>
+        <button type="submit" class="registerbtn" style="position: relative; top: -8px;"><b>View All Attendees</b></button>
         <button type="submit" class="registerbtn"><b>Logout Now</b></button>
+      </div>
     </form>
   </div>
 

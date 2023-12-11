@@ -13,13 +13,13 @@ body {
   padding: 0;
   background: url("PICS/ADDSTUDENT/background.jpg") no-repeat center center fixed;
   background-size: cover;
+  color: white;
 }
 
 .test2{
   border: none;
   padding: 30px;
   max-width: fit-content;
-  margin-top: 5px;
   margin-left: 920px;
 }
 
@@ -42,7 +42,11 @@ input{
 }
 
 select{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  padding-left: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 100px;
 }
 
 button{
@@ -59,6 +63,7 @@ button{
     <form action="action_page.php">
       <center><p>ADD STUDENT</p></center>
         <hr>
+        <br>
         <center><input type="text" placeholder="Last Name" name="last_name" id="last_name" required></center> 
         <right><input type="text" placeholder="First Name" name="first_name" id="first_name" required></right>
         <input style="margin-left: 50px;" type="text" placeholder="M.I." size="10" name="middle_initial" id="middle_initial">
@@ -66,29 +71,29 @@ button{
         <center><input type="text" placeholder="Student Number" name="student_no" id="student_no" required></center>
         
 
-        <label for="prog"><b>Program</b></label>
+        <center><label for="prog">Program</label><br>
         <select>
           <option value=""></option>
           <option value="cpe">CPE</option>
           <option value="ee">EE</option>
           <option value="it">IT</option>
           <option value="cs">CS</option>
-        </select>
-        <label for="cars"><b>Curr. Yr</b></label>
+        </select><br>
+        <label for="cars">Curr. Yr</label><br>
         <select>
           <option value=""></option>
           <option value="1st">1st Year</option>
           <option value="2nd">2nd</option> Year</option>
           <option value="3rd">3rd Year</option>
           <option value="4th">4th Year</option>
-        </select>
+        </select></center>
         <br>
         <center><input type="text" placeholder="UE E-mail address" name="E-mail" id="E-mail" required></center>
 
         <center><input type="tel" placeholder="Contact Number" name="number" id="number" required></center>
         <hr>
 
-        <button type="submit" class="registerbtn"><b>Register</b></button>
+        <button type="submit" class="registerbtn"><b>Submit</b></button>
     </form>
   </div>
 </body>

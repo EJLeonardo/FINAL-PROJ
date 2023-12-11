@@ -13,25 +13,23 @@ body {
 }
 
 .test2{
-  border-style: solid;
-  border-width: 5px;
-  border-color: #545454;
+  border: none;
   border-radius: 10px;
   padding: 30px;
   max-width: fit-content;
-  background-color: white;
-  margin-top: 100px;
-  margin-left: 1000px;
+  margin-top: 130px;
+  margin-left: 950px;
+  color: white;
 }
 
 label{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 input{
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #EEF5FF;
+  background-color: #ECF9FF;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color: black;
@@ -45,9 +43,13 @@ select{
 }
 
 button{
-  margin-left: 90px;
+  margin-left: 150px;
   width:100px;
   height: 50px;
+}
+
+p {
+  font-size: 50px;
 }
 
 </style>
@@ -56,11 +58,10 @@ button{
 
   <div class="test2">
     <form action="action_page.php">
-      <center><h1>MANAGE EVENT</h1></center>
+      <center><p>MANAGE EVENT</p></center>
         <hr>
         <center><label for="prog"><b>Choose Event to Manage</b></label></center>
-        <br><br>
-        <select style="padding-right: 200px; padding-top: 20px;">
+        <select style="padding-right: 200px; padding-top: 20px; margin-left: 70px; margin-top: 20px;">
           <option value=""></option>
           <option value="cpe">CPE</option>
           <option value="ee">EE</option>
