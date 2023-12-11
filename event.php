@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program, );
 
     if ($stmt->execute()) {
-        header("Location: addevent.html");
+        header("Location: addstudent.html");
         exit(); // Ensure that no further code is executed after the redirection
     } else {
         echo "Error: " . $stmt->error;
