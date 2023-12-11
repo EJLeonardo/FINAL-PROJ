@@ -27,7 +27,7 @@
             }
             header("Location: addstudent.html");
             exit();
-            echo "Registration Successful...8=D";
+            
 
             $stmt->close();
             $conn->close();
