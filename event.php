@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ssssssss", $event_name, $event_description, $event_date, $event_start_time, $event_end_time, $registration_fee, $program, $curr_year);
 
     if ($stmt->execute()) {
-        echo "New record created successfully";
-        // Redirect to a thank-you page or display a success message
+        header("Location: addevent.html");
+        exit(); // Ensure that no further code is executed after the redirection
     } else {
         echo "Error: " . $stmt->error;
     }
