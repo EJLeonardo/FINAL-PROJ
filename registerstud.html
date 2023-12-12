@@ -42,6 +42,7 @@ input{
   border-left: none;
   border-right: none;
   border-top: none;
+  font-size: 20px;
 }
 
 select{
@@ -49,7 +50,12 @@ select{
 }
 
 button{
-  margin-left: 70px;
+  margin-left: 250px;
+  width:100px;
+  height: 50px;
+}
+.buttons{
+  margin-left: 250px;
   width:100px;
   height: 50px;
 }
@@ -65,7 +71,7 @@ button{
     <form action="transfer.php" method="post">
       <center><p>REGISTER STUDENT NOW</p></center>
         <hr>
-        <center><label for="prog"><b>tanginamo</b></label></center>
+        <center><label for="prog"><b>Enter Student Number</b></label></center>
         <br>
         <center><input type="text" placeholder="Student Number" name="stud_id" id="stud_id" required></center>
         <hr>
@@ -73,12 +79,14 @@ button{
         <div class="buttons">
           <input type="submit" class="registerbtn" value="Register">
         </div>
+        <br>
     </form>
-    <form action="zzzzz.php" >
+    <form action="attendance.php" >
         <button type="submit" class="registerbtn" style="position: relative; top: -8px;"><b>View All Attendees</b></button>
-        <button type="submit" class="registerbtn"><b>Logout Now</b></button>
-      </div>
     </form>
+    <form action="dashboard.html">
+    <button type="submit" class="registerbtn"><b>Go Back Home</b></button>
+  </form>
   </div>
 
 </body>
