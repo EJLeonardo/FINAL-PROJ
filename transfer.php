@@ -21,6 +21,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (!$stmt->execute()) {
         die('Error in executing statement: ' . $stmt->error);
     }
+    header("Location: registerstud.html");
+        exit();
 
     $stmt->close();
 }

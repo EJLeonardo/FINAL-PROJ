@@ -59,16 +59,19 @@ button{
 <body>
 
   <div class="test2">
-    <form action="action_page.php">
+    <form action="transfer.php" method="post">
       <center><p>REGISTER STUDENT NOW</p></center>
         <hr>
         <center><label for="prog"><b>tanginamo</b></label></center>
         <br>
-        <center><input type="text" placeholder="Student Number" name="student_no" id="student_no" required></center>
+        <center><input type="text" placeholder="Student Number" name="stud_id" id="stud_id" required></center>
         <hr>
         <br>
         <div class="buttons">
-        <button type="submit" class="registerbtn"><b>Register</b></button>
+          <input type="submit" class="registerbtn" value="Register">
+        </div>
+    </form>
+    <form action="zzzzz.php" >
         <button type="submit" class="registerbtn" style="position: relative; top: -8px;"><b>View All Attendees</b></button>
         <button type="submit" class="registerbtn"><b>Logout Now</b></button>
       </div>
