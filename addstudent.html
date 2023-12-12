@@ -62,7 +62,7 @@ button{
 </head>
 <body>
   <div class="test2">
-    <form action="action_page.php">
+    <form action="add_stud.php" method="post">
       <center><p>ADD STUDENT</p></center>
         <hr>
         <br>
@@ -74,7 +74,7 @@ button{
         
 
         <center>
-        <select>
+        <select name="program">
           <option value="">Choose your Program</option>
           <option value="cpe">Computer Engineering</option>
           <option value="ee">Electrical Engineering</option>
@@ -82,7 +82,7 @@ button{
           <option value="cs">Computer Science</option>
         </select></center><br>
         <center>
-        <select>
+        <select name="year_l">
           <option value="">Current Year</option>
           <option value="1st">First Year</option>
           <option value="2nd">Second Year</option>

@@ -57,7 +57,7 @@ p {
 <body>
 
   <div class="test2">
-    <form action="action_page.php">
+    <form action="registerstud.html">
       <center><p>MANAGE EVENT</p></center>
         <hr>
         <form action="process_selection.php" method="post">

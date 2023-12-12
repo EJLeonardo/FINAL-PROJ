@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         echo "Event added successfully!";
-        header("Location: addstudent.html");
+        header("Location: addevent.html");
         exit();
     } else {
         echo "Error: " . $stmt->error;
