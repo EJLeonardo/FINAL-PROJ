@@ -17,7 +17,6 @@ body {
   border-radius: 10px;
   padding: 30px;
   max-width: fit-content;
-  margin-top: 130px;
   margin-left: 950px;
   color: white;
 }
@@ -55,6 +54,9 @@ p {
 </style>
 </head>
 <body>
+  <a href="dashboard.html" type="submit" class="btn" style="background-color: transparent; border: none;">
+    <img style="height: 50px; margin-left: 20px; margin-top: 20px;" src="PICS/DASHBOARD/sigee.jpg"/>
+  </a>
 
   <div class="test2">
     <form action="registerstud.html">

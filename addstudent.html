@@ -20,8 +20,9 @@ body {
   border: none;
   padding: 30px;
   max-width: fit-content;
-  margin-top: 5px;
   margin-left: 920px;
+  position: relative;
+  top: -100px;
 }
 
 label{
@@ -51,16 +52,16 @@ select{
   font-size: large;
 }
 
-button{
-  margin-left: 200px;
-  width:100px;
-  height: 50px;
-}
-
-
 </style>
+
+
 </head>
+
 <body>
+  <a href="dashboard.html" type="submit" class="btn" style="background-color: transparent; border: none;">
+    <img style="height: 50px; margin-left: 20px; margin-top: 20px;" src="PICS/DASHBOARD/sigee.jpg"/>
+  </a>
+
   <div class="test2">
     <form action="add_stud.php" method="post">
       <center><p>ADD STUDENT</p></center>
@@ -95,7 +96,7 @@ button{
         <center><input type="tel" placeholder="Contact Number" name="number" id="number" required></center>
         <hr>
 
-        <button type="submit" class="registerbtn"><b>Submit</b></button>
+        <button type="submit" class="registerbtn" style="  margin-left: 200px; width:100px; height: 50px;"><b>Submit</b></button>
     </form>
   </div>
 </body>
