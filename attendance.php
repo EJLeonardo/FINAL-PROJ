@@ -17,7 +17,7 @@
     }
 
     // Selecting data from the table (replace 'students' with your actual table name)
-    $selectQuery = "SELECT id, l_name, f_name FROM students";
+    $selectQuery = "SELECT id, l_name, f_name FROM newtablename";
     $result = $conn->query($selectQuery);
 
     if ($result->num_rows > 0) {
