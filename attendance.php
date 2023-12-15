@@ -8,6 +8,18 @@
 
 <style>
 
+p {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #C2D9FF;
+  background-size: cover;
+  color: #070A52;
+}
+
 .test2{
   border: none;
   padding: 30px;
@@ -17,6 +29,9 @@
 
 </style>
 <body>
+<a href="registerstud.html" type="submit" class="btn" style="background-color: transparent; border: none;">
+    <img style="height: 50px; margin-left: 20px; margin-top: 20px;" src="PICS/DASHBOARD/sigee.jpg"/>
+  </a>
 <div class="test2">
     
 <p>Student Information</p>
