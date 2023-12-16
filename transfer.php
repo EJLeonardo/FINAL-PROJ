@@ -9,8 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stud_id = $_POST["stud_id"];
 
     // Inserting data into the new table
-    $insertQuery = "INSERT INTO newtablename (l_name, f_name, middle_initial, stud_id, program, year_l, email, phone_num) 
-    SELECT l_name, f_name, middle_initial, stud_id, program, year_l, email, phone_num FROM students WHERE stud_id = ?";
+    $insertQuery = "INSERT INTO tab(l_name, f_name, middle_initial, stud_id, program, year_l, email, phone_num) SELECT l_name, f_name, m_i, stud_id, program, year_l, email, phone_num FROM student WHERE stud_id = ?";
     $stmt = $conn->prepare($insertQuery);
 
     if (!$stmt) {
